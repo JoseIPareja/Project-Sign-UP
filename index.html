@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-UP</title>
+    <title>Sign-Up</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,7 +17,60 @@
     </div>
     <div class="right">
         <div class="intro">Are you ready to join your favorite Cartoons? <br>Sign UP & Join our METAVERSE!</div>
-        <form>This will be a form</form>
+        <form action="" method="">
+            <div class="topform">
+                <div class="leftcolumn">
+                    <span class="first">
+                        <label for="first_name">First Name</label>
+                        <input type="text" id="first_name" name="first_name" placeholder="Ben">
+                    </span>
+                    <span class="email">
+                        <label for="user_email">Email Address</label>
+                        <input type="email" id="user_email" name="email" placeholder="ben10@cartoon.com">
+                    </span>
+                    <span class="pass">
+                        <label for="user_password">Password</label>
+                        <input type="password" id="user_password" name="password">
+                    </span>
+                </div>
+                <div class="rightcolumn">
+                    <span class="last">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" name="last_name" placeholder="Ten">
+                    </span>
+                    <span class="number">
+                        <label for="user_number">Number</label>
+                        <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" id="user_number" name="number" placeholder="1135840759">
+                    </span>
+                    <span class="passconf">
+                        <label for="user_password_confirmed">Confirm Password</label>
+                        <input type="password" id="user_password_confirmed" name="password_confirmed">
+                    </span>
+                </div>
+            </div>
+            <div class="bottomform">
+                <h4>Which show do you like the most?</h4>
+                <div class="options">
+                    <span class="dexter">
+                        <input type="radio" id="dexter" name="favShow" value="dexter">
+                        <label for="dexter">Dexter's Lab</label>
+                    </span>
+                    <span class="ed">
+                        <input type="radio" id="ed" name="favShow" value="ed">
+                        <label for="ed">Ed, Edd n Eddy</label>
+                    </span>
+                    <span class="foster">
+                        <input type="radio" id="foster" name="favShow" value="foster">
+                        <label for="foster">Foster's Mansion</label>
+                    </span>
+                    <span class="knd">
+                        <input type="radio" id="knd" name="favShow" value="knd">
+                        <label for="knd">Kids Next Door</label>
+                    </span>
+                </div>
+                <button type="submit">Sign Up</button>
+            </div>
+        </form>
     </div>
 </body>
 </html>
