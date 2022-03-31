@@ -7,21 +7,30 @@ body {
 }
 
 .left {
-    background-color: black;
+    background-color: red;
+    display: flex;
     height: 100vh;
-    width: 30vw;
+    width: 40vw;
+}
+
+.picture {
     background-image: url(./img/background.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-size: cover;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    flex: 1;
 }
 
 .right {
-    width: 70vw;
+    width: 60vw;
     height: 100vh;
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
 }
 
 .logocontainer {
@@ -30,10 +39,25 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(214, 214, 214, 0.1);
 }
 
 img {
     height: auto;
     width: 110px;
+}
+
+.intro {
+    color: aliceblue;
+    height: auto;
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 4px 4px 8px rgb(234, 0, 255), 0 0 1em blue, 0 0 0.4em blue;
+}
+
+form {
+    color: aliceblue;
+    background-color: rgba(0, 0, 139, 0.288);
+    height: 50vh;
+    text-align: center;
 }
